@@ -1,4 +1,4 @@
-What is Express?
+What is [Express](https://expressjs.com/en/api.html#express)?
 Framework for node.js apps to more easily accept HTTP Requests, and return HTTP responses.
 REST?
 REST means that the path that we are going to should represent the data being transferred. An API that uses the REST convention is said to be RESTful.
@@ -54,6 +54,9 @@ Middleware and what is it?
 Middleware functions are the perfect place to modify the req and res objects with relevant information.
 Its functions that helps us manage, or modify req and/or res objects.
 Uses of middleware in this project
+
 [Nodemon](https://www.npmjs.com/package/nodemon) - Restarts the node application when file changes in the directory are detected. You must specify this in the package.json
-Body-Parser - Parse incoming request bodies in a middleware before your handlers, available under the req.body property(Later version of express already have body-parser built in)
-Morgan - HTTP request logger middleware for node.js
+
+[Body-Parser](https://www.npmjs.com/package/body-parser) - Parse incoming request bodies in a middleware before your handlers, available under the req.body property(Later version of express already have body-parser built in)
+
+[Morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js
