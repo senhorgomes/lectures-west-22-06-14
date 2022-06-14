@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Database*Please dont sue me*</title>
+</head>
+
+<body>
+  <h1>
+    List of Marvel Superheroes
+  </h1>
+  <!-- <a href="/newhero">Add a new hero</a> -->
+  <form method="GET" action="/newhero">
+    <button>Add a new hero</button>
+  </form>
+  <ul>
+    <%for(const hero of marvelDatabase){%>
+      <li>
+        <p><%= hero.name %> has <%= hero.movies %> movie(s).</p>
+      </li>
+      <a href="/edithero/<%= hero.id %>"> Edit this hero!</a>
+      <form method="POST" action="/deletehero/<%= hero.id %>"> 
+        <button>Delete this hero!</button>
+      </form>
+    <%} %>
+  </ul>
+</body>
+
+</html>

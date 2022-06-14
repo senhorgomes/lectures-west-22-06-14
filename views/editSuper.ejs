@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    Edit <%= hero.name %>
+  </h1>
+  <form method="POST" action="/edithero/<%= hero.id%>">
+    <label for="name">Change the name:</label>
+    <input type="text" id="name" name="superheroName" value="<%= hero.name%>">
+    <label for="movies">Change how many movies they have appeared in:</label>
+    <input type="number" id="movies" name="movies" value="<%= hero.movies%>">
+    <button>Add to the database!</button>
+  </form>
+</body>
+
+</html>
